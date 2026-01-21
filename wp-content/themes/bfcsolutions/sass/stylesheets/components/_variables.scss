@@ -116,19 +116,21 @@ $c-bkgnd-accent2: $c-accent2;
 // font families
 $f-microns: 'microns';
 $f-typicons: 'typicons';
-$f-nunito: 'Nunito Sans', Arial, sans-serif;
-$f-arial: Arial, Helvetica, sans-serif;
+$f-barlow: 'Barlow', Arial, sans-serif;
+$f-script: lemongrass-script, sans-serif;
 
 // font definition
-$f-nav: $f-nunito;
-$f-heads: $f-nunito;
-$f-subheads: $f-nunito;
-$f-body: $f-arial;
+$f-nav: $f-barlow;
+$f-heads: $f-barlow;
+$f-subheads: $f-barlow;
+$f-body: $f-barlow;
 
+$f-light: 300;
 $f-book: 300;
 $f-regular: 400;
-$f-medium: 500;
-$f-bold: 700;
+$f-medium: 400;
+$f-semibold: 600;
+$f-bold: 600;
 
 
 // ======================================= //

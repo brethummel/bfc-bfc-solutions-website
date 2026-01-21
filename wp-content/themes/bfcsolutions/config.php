@@ -16,17 +16,17 @@ $GLOBALS['springboard_path'] = '/partials';
 
 $usemenus = false; // enables admin menu management (not fully implemented)
 $multilocs = false; // true modifies Contact Info fields to allow multiple locations
-$sitebanner = false; // true adds Site Banner fields to Contact Info page
-$leadattribution = false; // true enables lead attribution: see section below
-$allowsvgs = false; // true enables upload of svg files into media library
+$sitebanner = true; // true adds Site Banner fields to Contact Info page
+$leadattribution = true; // true enables lead attribution: see section below
+$allowsvgs = true; // true enables upload of svg files into media library
 $layerslider = false; // true enables layerslider type in block_hero
 $mcestyles = false; // show custom styles dropdown in WYSIWYG editor, customize below
 
 define('scs_google_maps_api_key', '');
 define('scs_google_geocoding_api_key', '');
 
-$GLOBALS['produrl'] = 'springboard.com';
-$GLOBALS['stageurl'] = 'brethummel.com';
+$GLOBALS['produrl'] = 'bfcsolutions.com';
+$GLOBALS['stageurl'] = 'curious-staging.com';
 $GLOBALS['stageuser'] = '';
 $GLOBALS['stagepass'] = '';
 
@@ -36,7 +36,8 @@ $GLOBALS['stagepass'] = '';
 // ======================================= // 
 
 function spr_add_theme_fonts($themeurl) {
-    wp_enqueue_style('poppins', 'https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+    wp_enqueue_style('google-fonts', 'https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap');
+    wp_enqueue_style('adobe-fonts', 'https://use.typekit.net/nlt2cqp.css');
     wp_enqueue_style('typicons', $themeurl . '/fonts/Typicons/typicons.min.css');
     wp_enqueue_style('microns', $themeurl . '/fonts/Microns/microns.css');
 }
